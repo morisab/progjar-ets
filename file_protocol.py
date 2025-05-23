@@ -22,7 +22,7 @@ class FileProtocol:
     def __init__(self):
         self.file = FileInterface()
     def proses_string(self, string_datamasuk=''):
-        logging.warning(f"string diproses: {repr(string_datamasuk)}")
+        # logging.warning(f"string diproses: {repr(string_datamasuk)}")
         try:
             if '\r\n' in string_datamasuk:
                 header, body = string_datamasuk.split('\r\n', 1)
